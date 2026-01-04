@@ -54,6 +54,24 @@ The model considers the following 13 parameters:
 
 4. **Open your browser** and go to `http://localhost:8501`
 
+## Deployment
+
+### Streamlit Cloud (Recommended)
+
+1. **Go to [Streamlit Cloud](https://share.streamlit.io/)** and sign in with your GitHub account.
+2. **Click "New app"**.
+3. **Select your repository**: `bharatsingh2917-glitch/blank-app`.
+4. **Choose branch**: `main`.
+5. **Main file path**: `streamlit_app.py`.
+6. **Click "Deploy!"**.
+
+Your app will be live at a URL like `https://your-app-name.streamlit.app/`.
+
+### Other Platforms
+
+- **Heroku**: Create a `Procfile` with `web: streamlit run streamlit_app.py --server.port $PORT --server.headless true`.
+- **AWS/Docker**: Containerize the app and deploy to your preferred cloud provider.
+
 ## Model Performance
 
 - **Algorithm**: Logistic Regression
